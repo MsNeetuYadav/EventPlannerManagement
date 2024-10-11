@@ -1,11 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <style>
+    h3 {
+
+      color: red;
+      margin-top: 20px;
+    }
+
+    h4 {
+
+      color: white;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    h5 {
+      color: white;
+
+      text-align: center;
+    }
+    .zoom:hover{
+      animation-name: zoom;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+    }
+    @keyframes zoom{
+      0%{
+        transform: scale(1);
+      }
+      50%{
+        transform: scale(1.2);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+    .color-change:hover{
+      color: crimson;
+      font-size: 1.2vw;
+    }
+    .color-change{
+      font-size: 1.2vw;
+    }
+  </style>
+
+
 </head>
+
 <body>
+  <div class="container-fluid">
+    <div class="row" style="background: brown; height: 90px;">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="zoom nav-link active" aria-current="page" href="event planner.html" style="color: aliceblue; margin-top: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="zoom nav-link" href="about.html" style="color: aliceblue; margin-top: 20px;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="zoom nav-link" href="services.html" style="color: aliceblue; margin-top: 20px;">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="zoom nav-link" href="gallary.html" style="color: aliceblue; margin-top: 20px;">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="zoom nav-link" href="booking.html" style="color: aliceblue; margin-top: 20px;">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="zoom nav-link" href="contact.html" style="color: aliceblue; margin-top: 20px;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="zoom nav-link" href="login.html" style="color: aliceblue; margin-top: 20px;">Login</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background:rgb(59, 58, 58); height: 50px;">
+      <div class="col-sm-12"></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background: rgb(222, 204, 7); height: 100px; overflow: hidden;">
+      <div class="col-sm-5"></div>
+      <div class="col-sm-2"><img src="images/output-onlinepngtools.png" style="height:100px;width:140px" /></div>
+      <div class="col-sm-5"></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/indian-wedding-gate-decoration-green-eucalyptus-background_221414-522.avif"
+              class="d-block w-100" alt="..." style="height: 500px; ">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Forever Memories</h5>
+              <p>The Forevermemories provide  all event planner.The Forever provide all type event like wedding,brithday party.it's all.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src=" images/image.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Forever Memories</h5>
+              <p>The Forevermemories provide  all event planner.The Forever provide all type event like wedding,brithday party.it's all.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src=" images/white-daylight-illuminates-wooden-hangar-prepared-wedding.jpg" class="d-block w-100"
+              alt="..." style="height: 500px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Forever Memories</h5>
+              <p>The Forevermemories provide  all event planner.The Forever provide all type event like wedding,brithday party.it's all.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" style="background: yellow; height: 70px; color:red; ">
+        
+          <h3 class="text-center">Wedding Event</h3>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="col-sm-12" style="background-image: url(images/back1.avif); height: auto; background-size: 100%; background-repeat: no-repeat;">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card text-center" style="overflow: hidden;">
+            <img src=" images/haldi.jpeg" class=" zoom card-img-top img-fluid" alt="..." style="height: 200px; width: 100%;">
+            <div class="card-body" style="height:300px;">
+              <h5 class="card-title">Haldi</h5>
+              <p class="card-text color-change">The Haldi is an intimate ritual, where your family and loved ones really pull out the
+                stops in order to ensure that the apple of their eye is covered for their wedding day and their married
+                life ahead.</p>
+              <a href="#" class=" zoom btn btn-primary">Visit now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center" style="overflow: hidden;">
+            <img src=" images/mehendi3.jpeg" class=" zoom card-img-top img-fluid" alt="..."
+              style="height: 200px; width: 100%; ">
+            <div class="card-body" style="height:300px;">
+              <h5 class="card-title">Mehndi</h5>
+              <p class="card-text color-change">The Mehndi is an intimate ritual, where your family and loved ones really pull out
+                the stops in order to ensure that the apple of their hand is covered for their wedding day and their
+                married life ahead.</p>
+              <a href="#" class=" zoom btn btn-primary">Visit now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center" style=" overflow: hidden;">
+            <img src=" images/sangeet1.jpeg" class=" zoom card-img-top img-fluid" alt="..."
+              style="height: 200px; width: 100%;">
+            <div class="card-body" style="height:300px;">
+              <h5 class="card-title">Sangeet</h5>
+              <p class="card-text color-change">The Sangeet is an intimate ritual, where your family and loved ones really pull out
+                the stops in order to ensure that the apple of their wedding is covered for their wedding day and their
+                married life ahead.</p>
+              <a href="#" class=" zoom btn btn-primary">Visit now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-center" style="overflow: hidden;">
+            <img src=" images/wedding1.jpeg" class=" zoom card-img-top img-fluid" alt="..."
+              style="height: 200px; width: 100%; ">
+            <div class="card-body" style="height:300px;">
+              <h5 class="card-title">Wedding</h5>
+              <p class="card-text color-change">The Wedding is an intimate ritual, where your family and loved ones really pull out
+                the stops in order to ensure that the apple of their marrige is covered for their wedding day and their
+                married life ahead.</p>
+              <a href="#" class=" zoom btn btn-primary">Visit now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" style="background: yellow; height: 70px; color:red; ">
+        
+          <h3 class=" zoom text-center"> Others Event</h3>
+        
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="col-sm-12" style="background-image: url(images/back1.avif); height: auto; background-size: 100%; background-repeat: no-repeat;">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="images/brithday.gif" class="zoom card-img-top" alt="..." height="300px">
+            <div class="card-body">
+              <h5 class="zoom card-title" style="font-family: fantasy; color:darkred;text-align: center;">Brithday Party</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="images/eng.gif" class=" zoom card-img-top" alt="..." height="300px">
+            <div class="card-body">
+              <h5 class="zoom card-title" style="font-family: fantasy; color:darkred;text-align: center;">Engagement</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src=" images/anniversary.gif" class=" zoom card-img-top" alt="..." height="300px">
+            <div class="card-body">
+              <h5 class=" zoom card-title" style="font-family: fantasy; color:darkred;text-align: center;">anniversary</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src=" images/drink.gif" class=" zoom card-img-top" alt="..." height="300px">
+            <div class="card-body">
+              <h5 class="zoom card-title" style="font-family: fantasy; color:darkred;text-align: center;">Reseption</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" style="background: yellow; height: 70px; color:red; "><h3><center>Wedding Videos</center></h3></div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row" style="background-image: url(images/back1.avif); height: 280px; background-size: 100%; background-repeat: no-repeat;">
+      <div class=" zoom col-sm-4">
+        <video width="320" height="240" controls>
+          <source src="video/v.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+      <div class="zoom col-sm-4">
+
+        <video width="320" height="240" controls>
+          <source src="video/v2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="zoom col-sm-4">
+        <video width="320" height="240" controls>
+          <source src="video/v3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background: rgb(216, 216, 12); height: 70px; text-align: center;"><h3 style="margin-top: 20px;">Touch to Us</h3>
+      <div class="col-sm-12"></div>
+      </div>
+      <div class="container-fluid">
+      <div class="row" >
+        
+        <div class="col-sm-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28463.789251480674!2d80.9692818!3d26.90433115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957eb98d2c773%3A0x196a64f581788cda!2sLucknow%2C%20Uttar%20Pradesh%20226022!5e0!3m2!1sen!2sin!4v1696089229903!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      
+<footer class="bg-dark text-center text-white">
+  
+  <div class="container p-4">
     
+    <section class="mb-4">
+     
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="images/facebook.jpg" height="40px"/>
+      </a>
+
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="images/linkdin.jpg" height="40px"/>
+      </a>
+
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="images/google.jpg" height="40px"/></a>
+
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="images/chrome.jpg" height="40px"/></a>
+
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="images/message.jpg" height="40px"/></a>
+
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="images/whatsapp.jpeg" height="40px"/></a>
+    </section>
+    
+
+    
+    <section class="">
+      <form action="">
+       
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up </strong>
+            </p>
+          </div>
+          
+          <div class="col-md-5 col-12">
+
+            <div class="form-outline form-white mb-4">
+              <input type="email"  class="form-control" />
+              <label class="form-label" >Email address</label>
+            </div>
+          </div>
+          
+          <div class="col-auto">
+            
+            <button type="submit" class="btn btn-outline-light mb-4" href="login.html">
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="mb-4">
+      <p>
+        The forever is the bigest event planner company in lko.so please visit forever memoreies.
+      </p>
+    </section>
+    </div>
+  <div class="text-center p-3" style="background-color:brown;">
+    @ 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Forever memories.com & design By Neetu Yadav</a>
+  </div>
+</footer>
+    </div>
+  </div>
+  </div>
 </body>
 </html>
